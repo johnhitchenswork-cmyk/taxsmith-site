@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://johnhitchenswork-cmyk.github.io/taxsmith-site/sitemap.xml
