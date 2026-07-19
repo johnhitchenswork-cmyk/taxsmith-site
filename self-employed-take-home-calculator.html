@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self-Employed Take-Home Pay Calculator (2025/26 and 2026/27) | TaxSmith</title>
+<meta name="description" content="Enter your income and expenses and see your Income Tax, National Insurance and take-home pay for 2025/26 and 2026/27. For UK sole traders and freelancers. No sign-up.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://johnhitchenswork-cmyk.github.io/taxsmith-site/self-employed-take-home-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Self-Employed Take-Home Pay Calculator (2025/26 and 2026/27)">
+<meta property="og:description" content="See your Income Tax, National Insurance and take-home pay for 2025/26 and 2026/27. For UK sole traders and freelancers. No sign-up.">
+<meta property="og:url" content="https://johnhitchenswork-cmyk.github.io/taxsmith-site/self-employed-take-home-calculator.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much tax does a sole trader pay?","acceptedAnswer":{"@type":"Answer","text":"A sole trader pays Income Tax and Class 4 National Insurance on their profit, which is income minus allowable expenses. Income Tax is 20 percent above the 12,570 pound personal allowance, 40 percent above 50,270 pounds and 45 percent above 125,140 pounds. Class 4 National Insurance is 6 percent between 12,570 and 50,270 pounds, then 2 percent above."}},
+{"@type":"Question","name":"Do I pay National Insurance if I am self-employed?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only Class 4 as a mandatory charge. Class 4 is 6 percent on profit between 12,570 and 50,270 pounds and 2 percent above that. Class 2 National Insurance is treated as paid for the self-employed above the Small Profits Threshold, so there is nothing mandatory to pay for it."}},
+{"@type":"Question","name":"Is Class 2 National Insurance still charged?","acceptedAnswer":{"@type":"Answer","text":"No, not as a mandatory charge. Since 6 April 2024, self-employed people with profits at or above the Small Profits Threshold have Class 2 treated as paid at no cost. Below that threshold, Class 2 is voluntary if you want to protect your National Insurance record. This calculator correctly charges zero for Class 2."}},
+{"@type":"Question","name":"How is take-home pay worked out for the self-employed?","acceptedAnswer":{"@type":"Answer","text":"Start with income, subtract allowable expenses to get profit, then subtract Income Tax and Class 4 National Insurance. What is left is your take-home pay. This calculator shows that figure per year, month and week for the 2025/26 and 2026/27 tax years."}}
+]}
+</script>
+<style>
+:root{--bg:#f5f8fb;--surface:#ffffff;--surface-2:#eaf1f8;--line:#d9e2ee;--navy:#0b2e4f;--text:#0c1a2b;--muted:#56657a;--teal:#0f8a6a;--teal-dark:#0b6e54}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.topnav .navwrap{max-width:1000px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.topnav .brand{font-weight:900;font-size:1.15rem;color:var(--navy);letter-spacing:-.3px}
+.topnav .brand span{color:var(--teal)}
+.topnav .brand:hover{text-decoration:none}
+.topnav .links{display:flex;gap:16px;flex-wrap:wrap;flex:1}
+.topnav .links a{color:var(--muted);font-size:.93rem;font-weight:600}
+.topnav .links a:hover{color:var(--navy);text-decoration:none}
+.topnav .nav-cta{background:var(--teal);color:#fff;font-weight:800;padding:9px 18px;border-radius:9px;font-size:.9rem;white-space:nowrap}
+.topnav .nav-cta:hover{background:var(--teal-dark);text-decoration:none}
+.article{max-width:760px;margin:0 auto;padding:48px 20px 20px}
+.article h1{font-size:2.2rem;line-height:1.2;font-weight:900;letter-spacing:-.5px;margin-bottom:18px;color:var(--navy)}
+.article h2{font-size:1.5rem;font-weight:800;margin:38px 0 12px;letter-spacing:-.2px;color:var(--navy)}
+.article h3{font-size:1.18rem;font-weight:700;margin:26px 0 8px;color:var(--navy)}
+.article p{color:#2b3550;margin:14px 0}
+.article ul,.article ol{margin:14px 0 14px 26px;color:#2b3550}
+.article li{margin:7px 0}
+.article strong{color:var(--text)}
+.article blockquote{border-left:3px solid var(--teal);background:var(--surface);padding:14px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--muted)}
+.lead-note{color:var(--muted);font-size:.95rem;font-style:italic;margin:6px 0 24px}
+.badge-link{display:inline-block;line-height:0;margin-top:6px}
+.badge-link img{height:54px;width:auto;display:block}
+.badge-link:hover{opacity:.9}
+.cta-box{background:linear-gradient(160deg,var(--surface),var(--surface-2));border:1px solid var(--teal);border-radius:16px;padding:30px;text-align:center;margin:42px 0}
+.cta-box h3{font-size:1.35rem;font-weight:900;margin-bottom:10px;color:var(--navy)}
+.cta-box p{color:var(--muted);margin-bottom:16px}
+.cta-box .badge-link img{margin:0 auto}
+.related{border-top:1px solid var(--line);margin-top:46px;padding-top:26px}
+.related h3{font-size:1.05rem;color:var(--muted);font-weight:700;margin-bottom:12px}
+.related a{display:block;margin:8px 0;font-weight:600}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:30px 20px;text-align:center;color:var(--muted);font-size:.88rem}
+footer.site a{color:var(--teal)}
+footer.site .disc{max-width:680px;margin:0 auto 12px;font-size:.8rem}
+.calc{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin:24px 0}
+.calc .row{margin:14px 0}
+.calc label{display:block;font-weight:700;color:var(--navy);margin-bottom:6px;font-size:.95rem}
+.calc input,.calc select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:1rem;background:#fff;color:var(--text)}
+.calc input:focus,.calc select:focus{outline:none;border-color:var(--teal)}
+.calc .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.result{background:var(--surface-2);border-radius:12px;padding:20px;margin-top:20px}
+.result .line{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.result .line:last-child{border-bottom:none}
+.result .line span:last-child{font-weight:700;color:var(--navy)}
+.result .headline{font-size:1.2rem;font-weight:900;color:var(--teal-dark)}
+.result .note{font-size:.85rem;color:var(--muted);margin-top:12px;font-style:italic}
+@media(max-width:680px){.article h1{font-size:1.7rem}.topnav .links{order:3;width:100%}.calc .grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <div class="navwrap">
+    <a class="brand" href="index.html">Tax<span>Smith</span></a>
+    <div class="links"><a href="self-employed-tax-uk-guide.html">Self employed tax guide</a><a href="allowable-expenses-self-employed.html">Allowable expenses</a><a href="tax-for-side-hustle-uk.html">Side hustle tax</a></div>
+    <a class="nav-cta" href="https://apps.apple.com/gb/app/taxsmith-uk-tax-calculator/id6763943412?utm_source=taxsmith&utm_medium=web&utm_campaign=taxsmith_site" target="_blank" rel="noopener">Get TaxSmith</a>
+  </div>
+</nav>
+<main class="article">
+<h1>Self-employed take-home pay calculator</h1>
+
+<p>Enter your income and expenses below and see, in seconds, your profit, your Income Tax, your Class 4 National Insurance and your take-home pay for the 2025/26 and 2026/27 tax years. No sign-up, no email, nothing to install. The figures used are the current HMRC rates, and Class 2 National Insurance is correctly treated as zero, as HMRC now applies it for the self-employed.</p>
+<p class="lead-note">For UK sole traders and freelancers. General guidance to help you plan, not formal tax advice.</p>
+
+<div class="calc">
+  <div class="row grid2">
+    <div>
+      <label for="income">Annual income (pounds)</label>
+      <input id="income" type="number" inputmode="numeric" min="0" step="100" placeholder="40000">
+    </div>
+    <div>
+      <label for="expenses">Annual expenses (pounds)</label>
+      <input id="expenses" type="number" inputmode="numeric" min="0" step="100" placeholder="0">
+    </div>
+  </div>
+  <div class="row">
+    <label for="year">Tax year</label>
+    <select id="year">
+      <option value="2526">2025/26</option>
+      <option value="2627" selected>2026/27</option>
+    </select>
+  </div>
+  <div class="result" id="result" aria-live="polite">
+    <div class="line"><span>Profit</span><span id="r-profit">&pound;0</span></div>
+    <div class="line"><span>Income Tax</span><span id="r-it">&pound;0</span></div>
+    <div class="line"><span>Class 4 National Insurance</span><span id="r-ni4">&pound;0</span></div>
+    <div class="line"><span>Class 2 National Insurance</span><span id="r-ni2">&pound;0</span></div>
+    <div class="line headline"><span>Take-home (year)</span><span id="r-take">&pound;0</span></div>
+    <div class="line"><span>Take-home (month)</span><span id="r-month">&pound;0</span></div>
+    <div class="line"><span>Take-home (week)</span><span id="r-week">&pound;0</span></div>
+    <div class="line"><span>Effective tax rate</span><span id="r-eff">0%</span></div>
+    <p class="note">Class 2 National Insurance is treated as paid for the self-employed above the Small Profits Threshold, so there is nothing to pay here. Figures are estimates for planning.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var Y={
+    "2526":{pa:12570,basicTop:50270,higherTop:125140,br:0.20,hr:0.40,ar:0.45,ni4a:0.06,ni4b:0.02,ni4Lower:12570,ni4Upper:50270,paTaperStart:100000},
+    "2627":{pa:12570,basicTop:50270,higherTop:125140,br:0.20,hr:0.40,ar:0.45,ni4a:0.06,ni4b:0.02,ni4Lower:12570,ni4Upper:50270,paTaperStart:100000}
+  };
+  function gbp(n){return "£"+Math.round(n).toLocaleString("en-GB");}
+  function incomeTax(profit,r){
+    var pa=r.pa;
+    if(profit>r.paTaperStart){pa=Math.max(0,r.pa-Math.floor((profit-r.paTaperStart)/2));}
+    var taxable=Math.max(0,profit-pa);
+    if(taxable<=0) return 0;
+    var basicBand=Math.max(0,r.basicTop-pa);
+    var higherBand=Math.max(0,r.higherTop-r.basicTop);
+    var tax=0;
+    var t=taxable;
+    var b=Math.min(t,basicBand);tax+=b*r.br;t-=b;
+    if(t>0){var h=Math.min(t,higherBand);tax+=h*r.hr;t-=h;}
+    if(t>0){tax+=t*r.ar;}
+    return tax;
+  }
+  function class4(profit,r){
+    if(profit<=r.ni4Lower) return 0;
+    var band1=Math.min(profit,r.ni4Upper)-r.ni4Lower;
+    var ni=band1*r.ni4a;
+    if(profit>r.ni4Upper){ni+=(profit-r.ni4Upper)*r.ni4b;}
+    return ni;
+  }
+  function calc(){
+    var income=parseFloat(document.getElementById("income").value)||0;
+    var expenses=parseFloat(document.getElementById("expenses").value)||0;
+    var r=Y[document.getElementById("year").value];
+    var profit=Math.max(0,income-expenses);
+    var it=incomeTax(profit,r);
+    var ni4=class4(profit,r);
+    var ni2=0; // Class 2 treated as paid above the Small Profits Threshold; never charged here.
+    var totalTax=it+ni4+ni2;
+    var take=profit-totalTax;
+    document.getElementById("r-profit").textContent=gbp(profit);
+    document.getElementById("r-it").textContent=gbp(it);
+    document.getElementById("r-ni4").textContent=gbp(ni4);
+    document.getElementById("r-ni2").textContent=gbp(0);
+    document.getElementById("r-take").textContent=gbp(take);
+    document.getElementById("r-month").textContent=gbp(take/12);
+    document.getElementById("r-week").textContent=gbp(take/52);
+    document.getElementById("r-eff").textContent=(profit>0?((totalTax/profit)*100).toFixed(1):"0.0")+"%";
+  }
+  ["income","expenses","year"].forEach(function(id){
+    document.getElementById(id).addEventListener("input",calc);
+    document.getElementById(id).addEventListener("change",calc);
+  });
+  calc();
+})();
+</script>
+
+<h2>How the calculator works</h2>
+<p>The maths follows the same steps HMRC uses, in the same order. First it works out your profit by subtracting your allowable expenses from your income. Then it applies Income Tax and Class 4 National Insurance to that profit. What is left is your take-home pay.</p>
+
+<h3>Income Tax</h3>
+<p>Everyone starts with a personal allowance of 12,570 pounds, on which no Income Tax is due. Above that, profit is taxed at 20 percent up to 50,270 pounds, 40 percent from there up to 125,140 pounds, and 45 percent above 125,140 pounds. Once profit passes 100,000 pounds the personal allowance is reduced by 1 pound for every 2 pounds over that figure, which is why very high earners lose it entirely by 125,140 pounds. The calculator handles this taper automatically.</p>
+
+<h3>Class 4 National Insurance</h3>
+<p>Class 4 is the National Insurance the self-employed pay on profit. It is charged at 6 percent on profit between 12,570 pounds and 50,270 pounds, then 2 percent on anything above 50,270 pounds. It sits on top of Income Tax and is a common thing to forget when setting money aside.</p>
+
+<h3>Class 2 National Insurance: why it is zero</h3>
+<p>This is the point many tools get wrong. Since 6 April 2024, self-employed people with profits at or above the Small Profits Threshold, 6,845 pounds in 2025/26 and 7,105 pounds in 2026/27, have Class 2 treated as paid at no cost. There is no mandatory Class 2 charge for a profitable sole trader. Below that threshold, Class 2 is voluntary if you want to keep your National Insurance record complete, at 3.50 pounds a week in 2025/26 and 3.65 pounds a week in 2026/27. This calculator charges zero for mandatory Class 2, which is the correct figure.</p>
+
+<div class="cta-box">
+  <h3>Carry the calculator in your pocket</h3>
+  <p>TaxSmith gives you the same estimate on your iPhone, wherever you are, so you always know what to set aside. On the App Store.</p>
+  <a class="badge-link" href="https://apps.apple.com/gb/app/taxsmith-uk-tax-calculator/id6763943412?utm_source=taxsmith&utm_medium=web&utm_campaign=taxsmith_site" target="_blank" rel="noopener"><img src="apple-badge.svg" alt="Download TaxSmith on the App Store"></a>
+</div>
+
+<h2>FAQ</h2>
+<p><strong>How much tax does a sole trader pay?</strong></p>
+<p>A sole trader pays Income Tax and Class 4 National Insurance on profit, which is income minus allowable expenses. Income Tax is 20 percent above the 12,570 pound personal allowance, 40 percent above 50,270 pounds and 45 percent above 125,140 pounds. Class 4 is 6 percent between 12,570 and 50,270 pounds, then 2 percent above. There is no mandatory Class 2 charge.</p>
+<p><strong>Do I pay National Insurance if I am self-employed?</strong></p>
+<p>Yes, Class 4 National Insurance, at 6 percent on profit between 12,570 and 50,270 pounds and 2 percent above. Class 2 is treated as paid for the self-employed above the Small Profits Threshold, so there is nothing mandatory to pay for it.</p>
+<p><strong>Is Class 2 National Insurance still charged?</strong></p>
+<p>Not as a mandatory charge. Since 6 April 2024 it is treated as paid at no cost for the self-employed above the Small Profits Threshold, and is voluntary below it. This calculator correctly shows zero.</p>
+<p><strong>How is take-home pay worked out for the self-employed?</strong></p>
+<p>Take income, subtract allowable expenses to get profit, then subtract Income Tax and Class 4 National Insurance. What is left is your take-home pay, shown here per year, month and week.</p>
+
+<div class="related"><h3>Related reading</h3><a href="self-employed-national-insurance.html">National Insurance for the self-employed: Class 2 and Class 4</a><a href="side-hustle-tax-checker.html">Do you owe tax on your side hustle?</a><a href="allowable-expenses-self-employed.html">Allowable expenses for the self-employed</a><a href="index.html">Back to TaxSmith overview</a></div>
+</main>
+<footer class="site"><p class="disc">TaxSmith is a UK tax calculator app for self employed people. This calculator gives general estimates for planning, not professional tax advice. Tax rules and thresholds can change, so always confirm current figures with HMRC or a qualified accountant.</p><p>TaxSmith &middot; Know what you owe, and what you keep.</p><p style="margin-top:6px"><a href="https://apps.apple.com/gb/app/taxsmith-uk-tax-calculator/id6763943412?utm_source=taxsmith&utm_medium=web&utm_campaign=taxsmith_site" target="_blank" rel="noopener">TaxSmith on the App Store</a></p></footer>
+</body>
+</html>
